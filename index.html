@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ristorante Chingu BBQ · Korean BBQ in Mestre, Venice</title>
+  <meta name="description" content="Ristorante Chingu BBQ, a cosy Korean wok and BBQ spot in the heart of Mestre, Venice. Come for the fried chicken, kimbap, toppokki and proper BBQ beef. Eat in, take away or get it delivered." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="images/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo">
+        <img src="images/logo.png" alt="Ristorante Chingu BBQ" class="logo-img"
+             onerror="this.style.display='none';" />
+        <span class="logo-text">Chingu<span class="logo-bbq">BBQ</span></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#dishes" data-i18n="nav_menu">Menu</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+        <a href="#reviews" data-i18n="nav_reviews">Reviews</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="it">IT</button>
+        <button type="button" data-lang="ko">KO</button>
+      </div>
+
+      <a href="#contact" class="btn btn-primary header-cta" data-i18n="btn_book">Book a table</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="leaf leaf-top" aria-hidden="true"></div>
+    <div class="hero-arc" aria-hidden="true"></div>
+    <span class="sparkle s1" aria-hidden="true"></span>
+    <span class="sparkle s2" aria-hidden="true"></span>
+    <span class="sparkle s3" aria-hidden="true"></span>
+    <span class="sparkle s4" aria-hidden="true"></span>
+    <div class="container hero-inner">
+      <div class="hero-text reveal">
+        <p class="eyebrow" data-i18n="hero_eyebrow">Korean Wok &amp; BBQ · Mestre, Venice</p>
+        <h1 data-i18n="hero_title">We make<br><span class="accent">great food</span> for you</h1>
+        <p class="hero-sub" data-i18n="hero_sub">
+          Tucked away in the heart of Mestre, just a short walk from the canals of Venice,
+          we cook Korean BBQ the way we love it. Sizzling meats, sweet sauces and a warm,
+          cosy room made for sharing with the people you like best.
+        </p>
+        <div class="hero-actions">
+          <a href="#dishes" class="btn btn-dark" data-i18n="btn_menu">Menu</a>
+          <a href="#contact" class="btn btn-primary" data-i18n="btn_book">Book a table</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://www.facebook.com/people/Ristorante-Chingu/61578311828957/" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5H17V3.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.45-4 4.1v2.3H7.8V13h2.8v8z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/chingu_mestre/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 9.3a2.7 2.7 0 100 5.4 2.7 2.7 0 000-5.4zm0-1.8a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm5.8-.2a1.05 1.05 0 11-2.1 0 1.05 1.05 0 012.1 0zM12 4.8c-2.2 0-2.5 0-3.4.05-.85.04-1.3.18-1.6.3-.4.16-.7.35-1 .65-.3.3-.5.6-.65 1-.12.3-.26.75-.3 1.6C4.8 9.5 4.8 9.8 4.8 12s0 2.5.05 3.4c.04.85.18 1.3.3 1.6.16.4.35.7.65 1 .3.3.6.5 1 .65.3.12.75.26 1.6.3.9.05 1.2.05 3.4.05s2.5 0 3.4-.05c.85-.04 1.3-.18 1.6-.3.4-.16.7-.35 1-.65.3-.3.5-.6.65-1 .12-.3.26-.75.3-1.6.05-.9.05-1.2.05-3.4s0-2.5-.05-3.4c-.04-.85-.18-1.3-.3-1.6a2.7 2.7 0 00-.65-1c-.3-.3-.6-.5-1-.65-.3-.12-.75-.26-1.6-.3C14.5 4.8 14.2 4.8 12 4.8zM12 3c2.45 0 2.75 0 3.7.06.96.04 1.6.19 2.18.41.6.23 1.1.54 1.6 1.04.5.5.81 1 1.04 1.6.22.57.37 1.22.41 2.18C21 9.25 21 9.55 21 12s0 2.75-.06 3.7c-.04.96-.19 1.6-.41 2.18-.23.6-.54 1.1-1.04 1.6-.5.5-1 .81-1.6 1.04-.57.22-1.22.37-2.18.41C14.75 21 14.45 21 12 21s-2.75 0-3.7-.06c-.96-.04-1.6-.19-2.18-.41a4.3 4.3 0 01-1.6-1.04 4.3 4.3 0 01-1.04-1.6c-.22-.57-.37-1.22-.41-2.18C3 14.75 3 14.45 3 12s0-2.75.06-3.7c.04-.96.19-1.6.41-2.18.23-.6.54-1.1 1.04-1.6.5-.5 1-.81 1.6-1.04.57-.22 1.22-.37 2.18-.41C9.25 3 9.55 3 12 3z"/></svg>
+          </a>
+          <span class="social-line"></span>
+        </div>
+      </div>
+
+      <div class="hero-media reveal">
+        <div class="steam" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="hero-photo">
+          <img src="https://static3.grubbio.com/50935g-albums-1.jpg" alt="Inside Ristorante Chingu BBQ, a warm and cosy dining room" loading="eager" />
+        </div>
+        <div class="hero-dish">
+          <img src="https://static3.grubbio.com/50935g-albums-3.jpg" alt="A signature dish at Chingu BBQ" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SPECIAL DISHES ===================== -->
+  <section class="dishes" id="dishes">
+    <div class="leaf leaf-dish-left" aria-hidden="true"></div>
+    <div class="leaf leaf-dish-right" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 data-i18n="dishes_title">Our Special Dishes</h2>
+        <p data-i18n="dishes_sub">These are the plates our regulars keep coming back for. Crispy Korean fried
+           chicken, fresh kimbap, chewy toppokki and proper BBQ beef, all served quick
+           and meant for sharing.</p>
+      </div>
+
+      <div class="dish-grid">
+        <article class="dish-card reveal">
+          <div class="dish-img">
+            <img src="https://static3.grubbio.com/50935g-albums-2.jpg" alt="Korean fried chicken" loading="lazy" />
+            <span class="dish-price">€12</span>
+          </div>
+          <h3 data-i18n="dish1_name">Korean Fried Chicken</h3>
+          <p data-i18n="dish1_desc">Crispy outside, juicy inside, tossed in a sweet and spicy glaze. Everyone's favourite, and you'll see why.</p>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-img">
+            <img src="https://static3.grubbio.com/50935g-albums-4.jpg" alt="Kimbap rolls" loading="lazy" />
+            <span class="dish-price">€9</span>
+          </div>
+          <h3 data-i18n="dish2_name">Kimbap</h3>
+          <p data-i18n="dish2_desc">Fresh seaweed rice rolls packed with veg and savoury fillings, sliced up and ready to share.</p>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-img">
+            <img src="https://static3.grubbio.com/50935g-albums-5.jpg" alt="Toppokki rice cakes" loading="lazy" />
+            <span class="dish-price">€10</span>
+          </div>
+          <h3 data-i18n="dish3_name">Toppokki</h3>
+          <p data-i18n="dish3_desc">Chewy rice cakes simmered in a rich, sweet and spicy sauce. Comfort food in a bowl.</p>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-img">
+            <img src="https://static3.grubbio.com/50935g-albums-6.jpg" alt="Korean BBQ beef" loading="lazy" />
+            <span class="dish-price">€18</span>
+          </div>
+          <h3 data-i18n="dish4_name">BBQ Beef</h3>
+          <p data-i18n="dish4_desc">Top quality beef, grilled right at your table and served with our own sweet sauces.</p>
+        </article>
+      </div>
+
+      <div class="menu-cta reveal">
+        <button type="button" class="btn btn-dark" id="openMenu" data-i18n="see_full_menu">See the full menu</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <div class="about-media reveal">
+        <img src="https://static3.grubbio.com/50935g-albums-7.jpg" alt="The dining room at Ristorante Chingu BBQ" loading="lazy" />
+        <div class="about-badge">
+          <span class="rating-num">4.8</span>
+          <span class="rating-stars">★★★★★</span>
+          <span class="rating-label" data-i18n="rating_label">115 guest reviews</span>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <p class="eyebrow" data-i18n="about_eyebrow">About us</p>
+        <h2 data-i18n="about_title">A little taste of Korea in the heart of Mestre</h2>
+        <p data-i18n="about_p1">
+          Welcome to Chingu BBQ. We're a small wok and BBQ place that mixes the Korean food
+          we grew up loving with a few modern touches. If you're after something a bit
+          different tonight, you're in the right spot.
+        </p>
+        <p data-i18n="about_p2">
+          The room is cosy and easy, just right for a night out with friends or a family
+          dinner. Our team will look after you, the portions are generous, the prices are
+          fair, and every dish has clear allergen info on our iPad menus, so you can sit
+          back and enjoy.
+        </p>
+        <ul class="about-points">
+          <li data-i18n="point1">Generous portions, fair prices</li>
+          <li data-i18n="point2">BBQ meats with our own sweet sauces</li>
+          <li data-i18n="point3">Allergen info on every dish</li>
+          <li data-i18n="point4">Quick, friendly service</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary" data-i18n="btn_book">Book a table</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 data-i18n="gallery_title">Gallery</h2>
+        <p data-i18n="gallery_sub">A little peek at the room, the food and the easy, friendly feel at Chingu BBQ.</p>
+      </div>
+      <div class="gallery-grid">
+        <a class="g-item reveal" href="https://static3.grubbio.com/50935g-albums-2.jpg" target="_blank" rel="noopener"><img src="https://static3.grubbio.com/50935g-albums-2.jpg" alt="Chingu BBQ photo" loading="lazy"></a>
+        <a class="g-item reveal" href="https://static3.grubbio.com/50935g-albums-3.jpg" target="_blank" rel="noopener"><img src="https://static3.grubbio.com/50935g-albums-3.jpg" alt="Chingu BBQ photo" loading="lazy"></a>
+        <a class="g-item reveal" href="https://static3.grubbio.com/50935g-albums-4.jpg" target="_blank" rel="noopener"><img src="https://static3.grubbio.com/50935g-albums-4.jpg" alt="Chingu BBQ photo" loading="lazy"></a>
+        <a class="g-item reveal" href="https://static3.grubbio.com/50935g-albums-5.jpg" target="_blank" rel="noopener"><img src="https://static3.grubbio.com/50935g-albums-5.jpg" alt="Chingu BBQ photo" loading="lazy"></a>
+        <a class="g-item reveal" href="https://static3.grubbio.com/50935g-albums-6.jpg" target="_blank" rel="noopener"><img src="https://static3.grubbio.com/50935g-albums-6.jpg" alt="Chingu BBQ photo" loading="lazy"></a>
+        <a class="g-item reveal" href="https://static3.grubbio.com/50935g-albums-7.jpg" target="_blank" rel="noopener"><img src="https://static3.grubbio.com/50935g-albums-7.jpg" alt="Chingu BBQ photo" loading="lazy"></a>
+        <a class="g-item reveal" href="https://static3.grubbio.com/50935g-albums-8.jpg" target="_blank" rel="noopener"><img src="https://static3.grubbio.com/50935g-albums-8.jpg" alt="Chingu BBQ photo" loading="lazy"></a>
+        <a class="g-item reveal" href="https://static3.grubbio.com/50935g-albums-9.jpg" target="_blank" rel="noopener"><img src="https://static3.grubbio.com/50935g-albums-9.jpg" alt="Chingu BBQ photo" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== REVIEWS ===================== -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 data-i18n="reviews_title">What Guests Are Saying</h2>
+        <p data-i18n="reviews_sub">Our guests gave us <strong>4.8 out of 5</strong> across 115 reviews. Here's what a few of them had to say.</p>
+      </div>
+      <div class="review-grid">
+        <blockquote class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="review1">"Everything is sooo tasty. The chicken, kimbap and toppokki are my favourites. The food comes out really quick, and the BBQ with the sweet sauces is such a good combo. The place is so cosy too, great for groups of friends and families."</p>
+          <footer><span class="r-name">Kamila Kanapyanova</span><span class="r-date" data-i18n="date_dec">Dec 2025</span></footer>
+        </blockquote>
+        <blockquote class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="review2">"Excellent dinner! Right in the centre of Mestre, everything really good, super attentive and kind staff, and the place is lovely too. Great value, especially given the generous portions."</p>
+          <footer><span class="r-name">Isabel Fischer</span><span class="r-date" data-i18n="date_dec">Dec 2025</span></footer>
+        </blockquote>
+        <blockquote class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="review3">"Super friendly staff and really good quality. I'll definitely be back!"</p>
+          <footer><span class="r-name">María Ramos Romero</span><span class="r-date" data-i18n="date_nov">Nov 2025</span></footer>
+        </blockquote>
+        <blockquote class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="review4">"I love the kimbap and the fried chicken, all of it delicious. And the beef they serve is top quality."</p>
+          <footer><span class="r-name">Imelda Grace</span><span class="r-date" data-i18n="date_oct">Oct 2025</span></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT / HOURS / LOCATION ===================== -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-info reveal">
+        <p class="eyebrow" data-i18n="contact_eyebrow">Hours &amp; Location</p>
+        <h2 data-i18n="contact_title">Come and say hi</h2>
+
+        <div class="info-block">
+          <h3 data-i18n="addr_title">Address</h3>
+          <p data-i18n="addr_text">P.le Donatori di Sangue, 2<br>30171 Venezia VE, Italy</p>
+        </div>
+
+        <div class="info-block">
+          <h3 data-i18n="resv_title">Reservations</h3>
+          <p><a href="tel:+393520921122">+39 352 092 1122</a></p>
+          <p class="price-note" data-i18n="price_note">Around €20 to €30 per person · Wok &amp; BBQ restaurant</p>
+        </div>
+
+        <div class="info-block">
+          <h3 data-i18n="hours_title">Opening Hours</h3>
+          <ul class="hours">
+            <li><span data-i18n="hours_days">Monday to Sunday</span><span data-i18n="hours_lunch">12:00 to 15:00</span></li>
+            <li><span></span><span data-i18n="hours_dinner">18:30 to 23:00</span></li>
+          </ul>
+        </div>
+
+        <div class="info-block">
+          <h3 data-i18n="service_title">Service Options</h3>
+          <p class="tags">
+            <span data-i18n="tag_dinein">Dine in</span><span data-i18n="tag_takeaway">Takeaway</span><span data-i18n="tag_delivery">Delivery</span>
+            <span data-i18n="tag_nocontact">No contact delivery</span><span data-i18n="tag_drive">Drive through</span>
+          </p>
+        </div>
+
+        <a href="tel:+393520921122" class="btn btn-primary" data-i18n="btn_call">Call to book</a>
+      </div>
+
+      <div class="contact-map reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.9051735546873!2d12.236925476404828!3d45.49185427107438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb57dabf832b1%3A0x11d23d5f719222d5!2sRistorante%20Chingu%20BBQ!5e0!3m2!1sen!2s!4v1763991634420!5m2!1sen!2s"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Ristorante Chingu BBQ location"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#top" class="logo logo-footer">
+          <span class="logo-chip">
+            <img src="images/logo.png" alt="Ristorante Chingu BBQ"
+                 onerror="this.parentElement.style.display='none';this.parentElement.nextElementSibling.style.display='inline';" />
+          </span>
+          <span class="logo-text" style="display:none">Chingu<span class="logo-bbq">BBQ</span></span>
+        </a>
+        <p data-i18n="footer_brand">Korean BBQ in the heart of Mestre, Venice. Sizzling meats, sweet sauces and a proper warm welcome.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/people/Ristorante-Chingu/61578311828957/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+          <a href="https://www.instagram.com/chingu_mestre/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="col_explore">Explore</h4>
+        <a href="#dishes" data-i18n="nav_menu">Menu</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+        <a href="#reviews" data-i18n="nav_reviews">Reviews</a>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="col_visit">Visit</h4>
+        <p data-i18n="addr_text">P.le Donatori di Sangue, 2<br>30171 Venezia VE, Italy</p>
+        <p><a href="tel:+393520921122">+39 352 092 1122</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="col_hours">Hours</h4>
+        <p data-i18n="footer_hours">Every day<br>12:00 to 15:00<br>18:30 to 23:00</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p data-i18n="copyright">© 2026 Ristorante Chingu BBQ. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== FULL MENU MODAL ===================== -->
+  <div class="menu-modal" id="menuModal" aria-hidden="true">
+    <div class="menu-backdrop" data-close></div>
+    <div class="menu-dialog" role="dialog" aria-modal="true" aria-labelledby="menuModalTitle">
+      <button class="menu-close" data-close aria-label="Close menu">×</button>
+      <h2 id="menuModalTitle" data-i18n="full_menu_title">Full Menu</h2>
+      <p class="menu-note" data-i18n="full_menu_note">Prices in euro. Allergen details are available in the restaurant.</p>
+
+      <div class="menu-cats" id="menuCats"></div>
+
+      <a href="http://dine1.umeet.life/#/?mid=1025922&tn=1&tid=100" target="_blank" rel="noopener" class="btn btn-primary menu-order" data-i18n="order_online">Order online</a>
+    </div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/menu-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
