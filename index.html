@@ -326,13 +326,16 @@
   <div class="menu-modal" id="menuModal" aria-hidden="true">
     <div class="menu-backdrop" data-close></div>
     <div class="menu-dialog" role="dialog" aria-modal="true" aria-labelledby="menuModalTitle">
-      <button class="menu-close" data-close aria-label="Close menu">×</button>
-      <h2 id="menuModalTitle" data-i18n="full_menu_title">Full Menu</h2>
-      <p class="menu-note" data-i18n="full_menu_note">Prices in euro. Allergen details are available in the restaurant.</p>
+      <div class="menu-head">
+        <button class="menu-close" data-close aria-label="Close menu">×</button>
+        <h2 id="menuModalTitle" data-i18n="full_menu_title">Full Menu</h2>
+        <p class="menu-note" data-i18n="full_menu_note">Prices in euro. Allergen details are available in the restaurant.</p>
+      </div>
 
-      <div class="menu-cats" id="menuCats"></div>
-
-      <a href="http://dine1.umeet.life/#/?mid=1025922&tn=1&tid=100" target="_blank" rel="noopener" class="btn btn-primary menu-order" data-i18n="order_online">Order online</a>
+      <div class="menu-scroll">
+        <div class="menu-cats" id="menuCats"></div>
+        <a href="http://dine1.umeet.life/#/?mid=1025922&tn=1&tid=100" target="_blank" rel="noopener" class="btn btn-primary menu-order" data-i18n="order_online">Order online</a>
+      </div>
     </div>
   </div>
 
